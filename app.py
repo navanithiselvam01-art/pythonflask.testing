@@ -1,6 +1,6 @@
 from flask import Flask, render_template_string
 
-application = Flask(__name__)
+app = Flask(__name__)
 
 HTML = """
 <!DOCTYPE html>
@@ -190,4 +190,4 @@ def home():
     return render_template_string(HTML)
 
 if __name__ == "__main__":
-    application.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000)
